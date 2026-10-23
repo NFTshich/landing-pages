@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня «Утро» — уют и аромат с первой чашки</title>
+  <meta name="description" content="Кофейня «Утро» — свежая выпечка, авторский кофе и тёплая атмосфера. Завтраки каждый день.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #2b2320; line-height: 1.6; }
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; color: #fff;
+      background: url('assets/cafe-general.jpg') center/cover no-repeat;
+      position: relative;
+    }
+    .hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+    .hero .inner { position: relative; max-width: 700px; padding: 2rem; }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; margin-bottom: 2rem; }
+    .btn {
+      display: inline-block; background: #c97b4a; color: #fff; padding: .9rem 2rem;
+      border-radius: 40px; text-decoration: none; font-size: 1.1rem; font-weight: bold;
+    }
+    section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .card { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card .body { padding: 1rem; }
+    .card h3 { margin-bottom: .4rem; }
+    .about { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+    .about img { width: 100%; max-width: 420px; border-radius: 12px; }
+    footer { text-align: center; padding: 2rem; background: #2b2320; color: #eee; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="inner">
+      <h1>Кофейня «Утро»</h1>
+      <p>Авторский кофе, свежая выпечка и тёплая атмосфера — начните день правильно.</p>
+      <a class="btn" href="#menu">Смотреть меню</a>
+    </div>
+  </header>
+
+  <section id="menu">
+    <h2>Наше меню</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/cup-closeup.jpg" alt="Кофе">
+        <div class="body"><h3>Авторский кофе</h3><p>Эспрессо, капучино, латте и сезонные напитки из свежайшего зерна.</p></div>
+      </div>
+      <div class="card">
+        <img src="assets/cake-closeup.jpg" alt="Десерты">
+        <div class="body"><h3>Домашние десерты</h3><p>Пирожные и торты, испечённые утром каждого дня.</p></div>
+      </div>
+      <div class="card">
+        <img src="assets/barmen-closeup.jpg" alt="Бариста">
+        <div class="body"><h3>Заботливые бариста</h3><p>Опыт, внимательность и радушие в каждой чашке.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="assets/intro-dream.jpg" alt="Атмосфера кофейни">
+    <div>
+      <h2>О нас</h2>
+      <p>Мы создали место, куда приходят не просто за кофе, а за настроением. Уютный интерьер,
+      приглушённый свет и аромат свежей обжарки.</p>
+      <p style="margin-top:1rem;">Завтраки — каждый день с 8:00. Пирожные к кофе — весь день.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Кофейня «Утро» · ул. Центральная, 12 · ежедневно 8:00–22:00</p>
+  </footer>
+</body>
+</html>
